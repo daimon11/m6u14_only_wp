@@ -13,7 +13,7 @@ module.exports = {
   devServer: {
     hot: true,
   },
-  entry: ['@babel/polyfill', './index.js'],
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     filename: '[name][contenthash].js',
     path: path.resolve(__dirname, 'dist'),
@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name][contenthash].css',
